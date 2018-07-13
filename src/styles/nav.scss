@@ -1,0 +1,82 @@
+/**
+ * Styling for navbar
+ */
+nav {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  position: fixed;
+  color: white;
+  transition: all 0.2s ease;
+  z-index: 1300;
+
+  .logo {
+    height: 2rem;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+  }
+
+  .logo-text {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-left: 2.8rem;
+    display: inline-block;
+    width: auto;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .links {
+    left: 0;
+    top: 0;
+    padding: 1.2rem 0.5rem 0rem 1rem;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+
+    a {
+      transition: all 0.2s ease;
+      color: white;
+      padding: 0rem 0.5rem;
+      cursor: hand;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &.scrolled {
+    color: black;
+    background: white;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.05);
+
+    .logo-text,
+    .links {
+      text-shadow: 0px 2px 6px transparent;
+
+      a {
+        color: black;
+
+        &:hover {
+          opacity: 1;
+          // color: $secondary !important;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Space that hides behind the fixed navbar such that all other elements are
+ * properly positioned on the page
+ */
+.nav-space {
+  height: 59px;
+  display: block;
+  width: 100%;
+}

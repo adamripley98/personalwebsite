@@ -1,0 +1,30 @@
+/* eslint-disable */
+@import './nav';
+@import './colors';
+
+/**
+ * General styling
+ */
+body {
+  overflow-x: hidden !important;
+  width: 100vw;
+  font-size: 1.2rem;
+  background: rgba(0, 5, 10, 0.01);
+}
+
+a {
+  text-decoration: none;
+  // color: $secondary;
+
+  &:visited {
+    // color: $secondary;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    // color: $secondary-dark;
+    text-decoration: none;
+  }
+}
