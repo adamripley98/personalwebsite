@@ -23,23 +23,41 @@ class Home extends Component {
       <div className="container home home-container">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          {/* <div className="col-6 col-md-9 col-lg-7"> */}
           <div className="col-12 col-md-5">
             <Fade left>
               <img className="img-fluid card-img headshot" alt="headshot" src={Headshot} />
             </Fade>
           </div>
-          {/* <div className="col-6 col-md-10 offset-md-1 col-lg-8"> */}
           <div className="col-12 col-md-7">
             <Fade right>
-              <div className="card">
-                <p className="hero-text">
-                  is simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the industrys standard dummy text ever
-                  since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentially unchanged. It was
+              <div className="card home-card">
+                <h1 className="transparent-text">
+                  Hi, I&apos;m Adam!
+                </h1>
+                <p className="description-text">
+                  {/* I&apos;m a student at the University of Pennsylvania where I study
+                   operations and computer science. */}
+                   Student @ Penn // Web Developer @ Riplo
+                </p>
+                <div className="line-break" />
+                <p className="card-text">
+                  I’m a student, freelance web developer, and aspring entrepreneur from
+                  Anchorage, Alaska. I just finished up my sophomore year at the University
+                  of Pennsylvania where I studied operations and computer science, and
+                  now I’m taking a year off from school to be a digital nomad.
+                </p>
+                <p className="card-text">
+                  I have deep interests in both the business and technical sides
+                  of startups. I spent last summer diving deep into web development,
+                  became obsessed with it, and have since started a student freelance
+                  web dev company. While I love coding, I find work where I&apos;m
+                  connecting with clients, solving difficult business problems, and
+                  creating enjoyable consumer experiences the most rewarding.
+                </p>
+                <p className="card-text">
+                  My long term goals center around changing the way we think about our
+                  time alive through alternative forms of education. Enjoy my site, and feel
+                  free to reach out if you want to talk!
                 </p>
               </div>
             </Fade>

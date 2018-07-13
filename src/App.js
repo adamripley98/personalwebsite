@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav/Nav';
 import Home from './components/Home';
-import About from './components/About';
-import Content from './components/Content';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+// import About from './components/About';
+// import Content from './components/Content';
+// import Portfolio from './components/Portfolio';
+// import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -13,10 +13,10 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Home />
-        <About />
+        {/* <About />
         <Content />
         <Portfolio />
-        <Contact />
+        <Contact /> */}
       </div>
     );
   }
