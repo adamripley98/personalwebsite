@@ -37,9 +37,6 @@ class Nav extends Component {
       <div>
         <nav className={this.state.scrolled ? 'scrolled' : ''}>
           <img className="logo" alt="Riplo" src={Logo} />
-          <h1 className="logo-text">
-            Welcome
-          </h1>
           <div className="links">
             <ScrollLink to="top" text="Home" hiddenMdDown />
             <ScrollLink to="about" text="About" />

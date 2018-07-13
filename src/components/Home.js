@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SmoothScroll from 'smooth-scroll';
 import Fade from 'react-reveal/Fade';
+import Headshot from '../images/headshot.png';
 
 class Home extends Component {
   componentDidMount() {
@@ -19,22 +20,29 @@ class Home extends Component {
     });
 
     return (
-      <div className="container hero">
+      <div className="container home home-container">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-md-9 offset-md-1 col-lg-7 offset-lg-1">
-            <div className="pad-1 hero-text-wrapper">
-              <Fade left>
+          {/* <div className="col-6 col-md-9 col-lg-7"> */}
+          <div className="col-12 col-md-5">
+            <Fade left>
+              <img className="img-fluid card-img headshot" alt="headshot" src={Headshot} />
+            </Fade>
+          </div>
+          {/* <div className="col-6 col-md-10 offset-md-1 col-lg-8"> */}
+          <div className="col-12 col-md-7">
+            <Fade right>
+              <div className="card">
                 <p className="hero-text">
-                  We are a driven group of
+                  is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industrys standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only
+                  five centuries, but also the leap into electronic typesetting,
+                  remaining essentially unchanged. It was
                 </p>
-              </Fade>
-              <Fade right>
-                <p className="hero-text">
-                  We rapidly with modern technologies and industry-trained best practices.
-                </p>
-              </Fade>
-            </div>
+              </div>
+            </Fade>
           </div>
         </div>
         <div className="space-4 hidden-lg-down" />

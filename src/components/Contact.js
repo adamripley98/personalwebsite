@@ -1,23 +1,8 @@
 import React, { Component } from 'react';
-import SmoothScroll from 'smooth-scroll';
 import Fade from 'react-reveal/Fade';
 
 class Contact extends Component {
-  componentDidMount() {
-    const arrow = document.getElementById('arrow');
-    window.addEventListener('scroll', () => {
-      const top = document.documentElement.scrollTop;
-      if (top > 50) arrow.style.opacity = '0';
-      else arrow.style.opacity = '0.8';
-    });
-  }
-
   render() {
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
-      offset: 100,
-    });
-
     return (
       <div className="container hero">
         <div className="space-2 hidden-md-down" />
@@ -39,21 +24,6 @@ class Contact extends Component {
         </div>
         <div className="space-4 hidden-lg-down" />
         <div className="space-2 hidden-xl-down" />
-        <div className="arrow-wrapper">
-          <a href="#about">
-            <i
-              id="arrow"
-              className="fa fa-chevron-down"
-              aria-hidden="true"
-              onClick={(event) => {
-                if (document.getElementById('about')) {
-                  event.preventDefault();
-                  scroll.animateScroll(document.getElementById('about'));
-                }
-              }}
-            />
-          </a>
-        </div>
         <div className="space-4 hidden-md-down" />
         <div className="space-4 hidden-lg-down" />
       </div>
