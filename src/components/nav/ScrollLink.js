@@ -13,7 +13,7 @@ const ScrollLink = ({ to, text, hiddenMdDown }) => {
       className={hiddenMdDown ? 'hidden-md-down' : ''}
       href={`#${to}`}
       onClick={(event) => {
-        const element = document.getElementById(to) // eslint-disable-line
+        const element = document.getElementById(to);
         if (element) {
           event.preventDefault();
           scroll.animateScroll(element);

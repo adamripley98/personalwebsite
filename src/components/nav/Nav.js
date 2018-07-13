@@ -43,8 +43,9 @@ class Nav extends Component {
           <div className="links">
             <ScrollLink to="top" text="Home" hiddenMdDown />
             <ScrollLink to="about" text="About" />
-            <ScrollLink to="projects" text="Projects" />
-            <ScrollLink to="contact" text="Contact" />
+            <ScrollLink to="content" text="Content" />
+            <ScrollLink to="portfolio" text="Portfolio" />
+            <ScrollLink to="contact" text="Get in touch" />
           </div>
         </nav>
         <div className="nav-space" id="top" />
