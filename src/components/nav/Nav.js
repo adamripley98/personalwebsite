@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Logo from '../../images/riplo.svg';
+import Fade from 'react-reveal/Fade';
+import Logo from '../../images/logo.svg';
 import ScrollLink from './ScrollLink';
 
 class Nav extends Component {
@@ -36,7 +37,9 @@ class Nav extends Component {
     return (
       <div>
         <nav className={this.state.scrolled ? 'scrolled' : ''}>
-          <img className="logo" alt="Riplo" src={Logo} />
+          <Fade top>
+            <img className="logo" alt="Riplo" src={Logo} />
+          </Fade>
           <div className="links">
             <ScrollLink to="top" text="Home" hiddenMdDown />
             <ScrollLink to="about" text="About" />
