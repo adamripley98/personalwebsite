@@ -1,4 +1,4 @@
-$partSize: 110px;
+$partSize: 90px;
 $margins: 0.5px;
 $rows: 3; //change this also in js
 $cols: 5; //change this also in js
@@ -9,10 +9,59 @@ $shadow-size: 10px;
 $demo-bg: linear-gradient(60deg, #5B5893, darken(#6A66A6, 30%));
 $gallery-bg: #eee;
 
+.content-card {
+  margin-top: 10vh;
+  padding:2rem 1rem;
+  background-color: #F8F8F8;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow: auto;
+  align-items: center;
+}
+
+.blog-img {
+  width: 8rem;
+  border-radius: 0.4rem;
+  filter: brightness(80%);
+}
+
+.blog-post {
+  overflow: hidden;
+  align-items: center;
+}
+
+.blog-title {
+  margin-top: 0.5rem;
+  font-size: 90%;
+  font-style: italic;
+  color: black;
+}
+
+.blog-container {
+  align-items: center;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .demo {

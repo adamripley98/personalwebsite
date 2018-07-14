@@ -73,22 +73,22 @@ class About extends Component {
             </Fade>
           </div>
           <div className="social-icons">
-            <a href="https://www.facebook.com/adam.ripley.39">
+            <a href="https://www.facebook.com/adam.ripley.39" className="hvr-grow-rotate">
               <img alt="facebook" src={Facebook} />
             </a>
-            <a href="mailto:adamripley@gmail.com">
+            <a href="mailto:adamripley@gmail.com" className="hvr-grow-rotate">
               <img alt="email" src={Email} />
             </a>
-            <a href="https://github.com/adamripley98">
+            <a href="https://github.com/adamripley98" className="hvr-grow-rotate">
               <img alt="github" src={Github} />
             </a>
-            <a href="https://medium.com/@adamripley">
+            <a href="https://medium.com/@adamripley" className="hvr-grow-rotate">
               <img alt="medium" src={Medium} />
             </a>
-            <a href="https://www.instagram.com/allergyadam/">
+            <a href="https://www.instagram.com/allergyadam/" className="hvr-grow-rotate">
               <img alt="instagram" src={Instagram} />
             </a>
-            <a href="https://www.linkedin.com/in/adamrip/">
+            <a href="https://www.linkedin.com/in/adamrip/" className="hvr-grow-rotate">
               <img alt="linkedin" src={Linkedin} />
             </a>
           </div>

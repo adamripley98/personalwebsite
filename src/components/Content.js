@@ -20,17 +20,59 @@ import img15 from '../images/gallery/15.JPG';
 class Content extends Component {
   render() {
     return (
-      <div className="container hero" id="content">
+      <div className="container content" id="content">
         <div className="space-2 hidden-md-down" />
         <div className="row">
           <div className="col-12 col-md-6">
             <Fade right>
-              <div className="card about-card">
+              <div className="card content-card">
                 <h1 className="title-text">
                   Pictures
                 </h1>
                 <div className="line-break" />
                 <div className="demo__gallery" />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-12 col-md-6">
+            <Fade right>
+              <div className="card content-card">
+                <h1 className="title-text">
+                  Blog Posts
+                </h1>
+                <div className="line-break" />
+                <div className="row blog-container">
+                  <div className="col-md-4 blog-post hvr-float">
+                    <a href="https://medium.com/@adamripley/time-off-other-updates-166cafaa719f">
+                      <img alt="blog" src={img1} className="blog-img" />
+                      <h1 className="blog-title">
+                        Time Off & Other Updates
+                      </h1>
+                    </a>
+                  </div>
+                  <div className="col-md-4 blog-post hvr-float">
+                    <img alt="blog" src={img2} className="blog-img" />
+                    <h1 className="blog-title">
+                      Thoughts on Education
+                    </h1>
+                  </div>
+                  <div className="col-md-4 blog-post hvr-float">
+                    <img alt="blog" src={img3} className="blog-img" />
+                    <h1 className="blog-title">
+                      My personal site is dank
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </Fade>
+          </div>
+          <div className="col-12 col-md-6">
+            <Fade right>
+              <div className="card content-card">
+                <h1 className="title-text">
+                  Videos
+                </h1>
+                <div className="line-break" />
               </div>
             </Fade>
           </div>
