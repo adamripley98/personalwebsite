@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+import Facebook from '../images/social/facebook.svg';
+import Github from '../images/social/github.svg';
+import Email from '../images/social/email.svg';
+import Instagram from '../images/social/instagram.svg';
+import Linkedin from '../images/social/linkedin.svg';
+import Medium from '../images/social/medium.svg';
+
 
 class About extends Component {
   render() {
@@ -7,11 +14,11 @@ class About extends Component {
       <div className="container hero" id="about">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-md-4">
             <Fade left>
-              <div className="card home-card">
+              <div className="card about-card">
                 <h1 className="title-text">
-                  Currently...
+                  Currently
                 </h1>
                 <div className="line-break" />
                 <p className="card-text">
@@ -29,9 +36,9 @@ class About extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-md-3">
             <Fade right>
-              <div className="card home-card">
+              <div className="card about-card">
                 <h1 className="title-text">
                   Skills
                 </h1>
@@ -42,6 +49,36 @@ class About extends Component {
                 </p>
               </div>
             </Fade>
+          </div>
+          <div className="col-12 col-md-5">
+            <Fade left>
+              <div className="card about-card">
+                <h1 className="title-text">
+                  Education
+                </h1>
+                <div className="line-break" />
+                <p className="card-text">
+                  University of Pennsylvania, The Wharton School 2016-Present
+                  I studied Operations Management and Computer Science, was an exec board member
+                  for the entrepreneurship club, and was a backend web developer
+                  for the Signal and PennLabs. I also made Dean&apos;s list.
+                </p>
+                <p className="card-text">
+                  Dimond High School
+                  2012-2016
+                  I founded an entrepreneurship club, was varsity soccer captain,
+                  was Athletic Council president, and gave the graduation speech.
+                </p>
+              </div>
+            </Fade>
+          </div>
+          <div className="social-icons">
+            <img alt="facebook" src={Facebook} />
+            <img alt="email" src={Email} />
+            <img alt="linkedin" src={Linkedin} />
+            <img alt="github" src={Github} />
+            <img alt="instagram" src={Instagram} />
+            <img alt="medium" src={Medium} />
           </div>
         </div>
         <div className="space-4 hidden-lg-down" />
