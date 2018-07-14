@@ -18,6 +18,10 @@ $gallery-bg: #eee;
   align-items: center;
 }
 
+.pictures {
+  margin-top: 10rem;
+}
+
 .blog-img {
   width: 8rem;
   border-radius: 0.4rem;
@@ -38,6 +42,32 @@ $gallery-bg: #eee;
 
 .blog-container {
   align-items: center;
+}
+
+.video-img {
+  width: 8rem;
+  border-radius: 0.4rem;
+  filter: brightness(90%);
+}
+
+.video-post {
+  overflow: hidden;
+  align-items: center;
+}
+
+.video-title {
+  margin-top: 0.5rem;
+  font-size: 90%;
+  font-style: italic;
+  color: black;
+}
+
+.video-container {
+  align-items: center;
+}
+
+.video {
+  margin-top: -11rem;
 }
 
 *, *:before, *:after {

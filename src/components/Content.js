@@ -25,7 +25,7 @@ class Content extends Component {
         <div className="row">
           <div className="col-12 col-md-6">
             <Fade right>
-              <div className="card content-card">
+              <div className="card content-card pictures">
                 <h1 className="title-text">
                   Pictures
                 </h1>
@@ -66,13 +66,39 @@ class Content extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 offset-lg-6">
             <Fade right>
-              <div className="card content-card">
+              <div className="card content-card video">
                 <h1 className="title-text">
                   Videos
                 </h1>
                 <div className="line-break" />
+                <div className="row video-container">
+                  <div className="col-md-4 video-post hvr-float">
+                    <a href="https://www.youtube.com/watch?v=bdrMPzLh-uM">
+                      <img alt="blog" src="http://i3.ytimg.com/vi/bdrMPzLh-uM/hqdefault.jpg" className="video-img" />
+                      <h1 className="video-title">
+                        Peachy Documentary
+                      </h1>
+                    </a>
+                  </div>
+                  <div className="col-md-4 video-post hvr-float">
+                    <a href="https://www.youtube.com/watch?v=JNBmam-uJVs">
+                      <img alt="blog" src="http://i3.ytimg.com/vi/JNBmam-uJVs/hqdefault.jpg" className="video-img" />
+                      <h1 className="video-title">
+                        1 Second Every Day - 2017
+                      </h1>
+                    </a>
+                  </div>
+                  <div className="col-md-4 video-post hvr-float">
+                    <a href="https://www.youtube.com/watch?v=MYW3XA3jP-8">
+                      <img alt="blog" src="http://i3.ytimg.com/vi/MYW3XA3jP-8/hqdefault.jpg" className="video-img" />
+                      <h1 className="video-title">
+                        Vita Fitness Pitch
+                      </h1>
+                    </a>
+                  </div>
+                </div>
               </div>
             </Fade>
           </div>
