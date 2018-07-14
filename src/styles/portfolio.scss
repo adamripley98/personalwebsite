@@ -1,0 +1,25 @@
+.portfolio-card {
+  margin-top: 10vh;
+  background-color: #F8F8F8;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow: hidden;
+  align-items: center;
+  height: 70vh;
+}
+
+.portfolio-img {
+  width: 103%;
+  height: 58%;
+}
+
+.portfolio-title {
+  font-size: 2rem;
+}
+
+.portfolio-description {
+  font-size: 1rem;
+}
+
+.technologies {
+  font-style: italic;
+}

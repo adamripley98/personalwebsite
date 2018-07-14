@@ -53,6 +53,9 @@ $gallery-bg: #eee;
 .video-post {
   overflow: hidden;
   align-items: center;
+  position: relative;
+  display: block;
+  float: left;
 }
 
 .video-title {
