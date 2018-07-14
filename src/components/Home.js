@@ -21,7 +21,7 @@ class Home extends Component {
 
     return (
       <div>
-        <div className="container home home-container">
+        <div className="container home home-container" id="home">
           <div className="space-2 hidden-md-down" />
           <div className="row">
             <div className="col-12 col-md-5">
@@ -32,7 +32,7 @@ class Home extends Component {
             <div className="col-12 col-md-7">
               <Fade right>
                 <div className="card home-card">
-                  <h1 className="transparent-text">
+                  <h1 className="title-text">
                     Hi, I&apos;m Adam!
                   </h1>
                   <p className="description-text">
