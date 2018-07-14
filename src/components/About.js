@@ -73,12 +73,24 @@ class About extends Component {
             </Fade>
           </div>
           <div className="social-icons">
-            <img alt="facebook" src={Facebook} />
-            <img alt="email" src={Email} />
-            <img alt="linkedin" src={Linkedin} />
-            <img alt="github" src={Github} />
-            <img alt="instagram" src={Instagram} />
-            <img alt="medium" src={Medium} />
+            <a href="https://www.facebook.com/adam.ripley.39">
+              <img alt="facebook" src={Facebook} />
+            </a>
+            <a href="mailto:adamripley@gmail.com">
+              <img alt="email" src={Email} />
+            </a>
+            <a href="https://github.com/adamripley98">
+              <img alt="github" src={Github} />
+            </a>
+            <a href="https://medium.com/@adamripley">
+              <img alt="medium" src={Medium} />
+            </a>
+            <a href="https://www.instagram.com/allergyadam/">
+              <img alt="instagram" src={Instagram} />
+            </a>
+            <a href="https://www.linkedin.com/in/adamrip/">
+              <img alt="linkedin" src={Linkedin} />
+            </a>
           </div>
         </div>
         <div className="space-4 hidden-lg-down" />

@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/nav/Nav';
 import Home from './components/Home';
 import About from './components/About';
-// import Content from './components/Content';
+import Content from './components/Content';
 // import Portfolio from './components/Portfolio';
 // import Contact from './components/Contact';
 
@@ -14,7 +14,7 @@ class App extends Component {
         <Nav />
         <Home />
         <About />
-        {/* <Content /> */}
+        <Content />
         {/* <Portfolio /> */}
         {/* <Contact /> */}
       </div>
