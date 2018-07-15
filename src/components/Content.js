@@ -23,18 +23,20 @@ class Content extends Component {
       <div className="container content" id="content">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-md-6">
+          <div className="col-xl-8 col-lg-10 offset-lg-1 col-12 offset-xl-2">
             <Fade right>
               <div className="card content-card pictures">
                 <h1 className="title-text">
                   Pictures
                 </h1>
                 <div className="line-break" />
-                <div className="demo__gallery" />
+                <div className="gallery-container">
+                  <div className="demo__gallery" />
+                </div>
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-lg-6">
             <Fade right>
               <div className="card content-card">
                 <h1 className="title-text">
@@ -42,7 +44,7 @@ class Content extends Component {
                 </h1>
                 <div className="line-break" />
                 <div className="row blog-container">
-                  <div className="col-md-4 blog-post hvr-float">
+                  <div className="col-4 blog-post hvr-float">
                     <a href="https://medium.com/@adamripley/time-off-other-updates-166cafaa719f">
                       <img alt="blog" src={img1} className="blog-img" />
                       <h1 className="blog-title">
@@ -50,13 +52,13 @@ class Content extends Component {
                       </h1>
                     </a>
                   </div>
-                  <div className="col-md-4 blog-post hvr-float">
+                  <div className="col-4 blog-post hvr-float">
                     <img alt="blog" src={img2} className="blog-img" />
                     <h1 className="blog-title">
                       Thoughts on Education
                     </h1>
                   </div>
-                  <div className="col-md-4 blog-post hvr-float">
+                  <div className="col-4 blog-post hvr-float">
                     <img alt="blog" src={img3} className="blog-img" />
                     <h1 className="blog-title">
                       My personal site is dank
@@ -66,7 +68,7 @@ class Content extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-6 offset-lg-6">
+          <div className="col-12 col-lg-6">
             <Fade right>
               <div className="card content-card video">
                 <h1 className="title-text">
@@ -74,7 +76,7 @@ class Content extends Component {
                 </h1>
                 <div className="line-break" />
                 <div className="row video-container">
-                  <div className="col-md-4 video-post hvr-float">
+                  <div className="col-4 video-post hvr-float">
                     <a href="https://www.youtube.com/watch?v=bdrMPzLh-uM">
                       <img alt="blog" src="http://i3.ytimg.com/vi/bdrMPzLh-uM/hqdefault.jpg" className="video-img" />
                       <h1 className="video-title">
@@ -82,7 +84,7 @@ class Content extends Component {
                       </h1>
                     </a>
                   </div>
-                  <div className="col-md-4 video-post hvr-float">
+                  <div className="col-4 video-post hvr-float">
                     <a href="https://www.youtube.com/watch?v=JNBmam-uJVs">
                       <img alt="blog" src="http://i3.ytimg.com/vi/JNBmam-uJVs/hqdefault.jpg" className="video-img" />
                       <h1 className="video-title">
@@ -90,7 +92,7 @@ class Content extends Component {
                       </h1>
                     </a>
                   </div>
-                  <div className="col-md-4 video-post hvr-float">
+                  <div className="col-4 video-post hvr-float">
                     <a href="https://www.youtube.com/watch?v=MYW3XA3jP-8">
                       <img alt="blog" src="http://i3.ytimg.com/vi/MYW3XA3jP-8/hqdefault.jpg" className="video-img" />
                       <h1 className="video-title">

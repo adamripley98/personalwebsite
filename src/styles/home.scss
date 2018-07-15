@@ -20,7 +20,7 @@
     margin-top: 20vh;
   }
   @media (max-width: 992px) {
-    margin-bottom: 2rem;
+    margin-bottom: -4rem;
     margin-top: 4vh;
   }
 }
@@ -78,46 +78,4 @@
   width: 22rem;
   margin-top: 10vh;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-#more-arrows {
-	width: 75px;
-  height: 65px;
-  margin-top: 3vh;
-  margin-bottom: 5vh;
-
-  &:hover {
-    polygon {
-      fill: #FFF;
-      transition: all .2s ease-out;
-      &.arrow-bottom {
-        transform: translateY(-18px);
-      }
-      &.arrow-top {
-        transform: translateY(18px);
-      }
-    }
-  }
-
-  @media (min-width: 992px) {
-    visibility: visible;
-  }
-
-  @media (max-width: 992px) {
-    visibility: hidden;
-  }
-}
-
-polygon {
-  fill: #FFF;
-  transition: all .2s ease-out;
-
-  &.arrow-middle {
-	  opacity: 0.75;
-	}
-
-	&.arrow-top {
-	  opacity: 0.5
-	}
-
 }

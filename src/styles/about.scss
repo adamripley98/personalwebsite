@@ -1,5 +1,6 @@
 .about-container {
-  padding: 4rem 0rem;
+  padding: 2rem 0rem;
+  padding-bottom: 4rem;
   background-image: url('../images/backgrounds/abstract4.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,8 +20,6 @@
 .about-icon {
   visibility: hidden;
   width: 0%;
-  // margin-top: -4rem;
-  // margin-left: 1rem;
 }
 
 .tag {
