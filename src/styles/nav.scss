@@ -10,11 +10,17 @@ nav {
   z-index: 1300;
 
   .logo {
-    height: 5rem;
-    width: auto;
     float: left;
     top: 1rem;
     transition: 0.5s;
+    @media(min-height: 440px) {
+      height: 5rem;
+      width: auto;
+    }
+    @media(max-height: 440px) {
+      height:1rem;
+      width: auto;
+    }
   }
 
   .links {
@@ -51,6 +57,7 @@ nav {
       margin-top:-0.7rem;
       float: left;
       margin-bottom: -0.5rem;
+      margin-left: -0.6rem;
     }
     .logo-text,
     .links {

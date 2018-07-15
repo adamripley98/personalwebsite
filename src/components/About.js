@@ -5,14 +5,14 @@ import Education from '../images/about/education.svg';
 import Skills from '../images/about/skills.svg';
 import Experience from '../images/about/experience.svg';
 
-const skills = ['Javascript', 'Java', 'Python', 'OCaml', 'HTML5/CSS3', 'Bootstrap4', 'React/Redux', 'React Native', 'Express', 'Node.js', 'MongoDB', 'Firebase', 'Git', 'Heroku', 'AWS'];
+const skills = ['Javascript', 'Java', 'Python', 'OCaml', 'HTML5', 'Redux', 'Bootstrap4', 'React', 'CSS3', 'React Native', 'Express', 'Git', 'Node.js', 'MongoDB', 'AWS', 'Firebase', 'Heroku'];
 
 function displaySkills() {
   const skillsFormatted = skills.map((skill) => { //eslint-disable-line
     return (
-      <span className="tag">
+      <p className="tag">
         {skill}
-      </span>
+      </p>
     );
   });
   return skillsFormatted;
@@ -58,7 +58,7 @@ class About extends Component {
           </div>
           <div className="col-12 col-md-3">
             <Fade right>
-              <div className="card about-card">
+              <div className="card about-card container">
                 <div className="about-header">
                   <h1 className="about-title-text">
                     Skills
@@ -66,32 +66,6 @@ class About extends Component {
                   <img alt="skills" src={Skills} className="about-icon" />
                 </div>
                 <div className="line-break" />
-                <div>
-                  <span className="tag">
-                    java
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                  <span className="tag">
-                    javascript
-                  </span>
-                </div>
                 <div className="skills-container">
                   {displaySkills()}
                 </div>
@@ -109,28 +83,47 @@ class About extends Component {
                 </div>
                 <div className="line-break" />
                 <p className="card-text">
-                  University of Pennsylvania, The Wharton School 2016-Present
-                  I studied Operations Management and Computer Science, was an exec board member
-                  for the entrepreneurship club, and was a backend web developer
-                  for the Signal and PennLabs. I also made Dean&apos;s list.
+                  <i>
+                    &#9658;&nbsp;&nbsp;Riplo Ventures, Cofounder & Developer
+                  </i>
+                  <br />
+                  March 2018 - Present
+                  Riplo is a student-run freelance web development company centered
+                  at the University of Pennsylvania. We deliver everything from complex
+                  web applications to mobile apps to static websites. Our developers work
+                  with a variety of clients and are open to creating projects from scratch
+                  or modifying existing code bases.
                 </p>
                 <p className="card-text">
-                  Dimond High School
-                  2012-2016
-                  I founded an entrepreneurship club, was varsity soccer captain,
-                  was Athletic Council president, and gave the graduation speech.
+                  <i>
+                    &#9658;&nbsp;&nbsp;PennLabs, Backend Developer
+                  </i>
+                  <br />
+                  January 2018 - Present
+                  Penn Labs is a group of driven developers, designers, and innovators
+                  at the University of Pennsylvania, aiming to create web and mobile
+                  applications that improve the Penn community in a meaningful way.
                 </p>
                 <p className="card-text">
-                  Dimond High School
-                  2012-2016
-                  I founded an entrepreneurship club, was varsity soccer captain,
-                  was Athletic Council president, and gave the graduation speech.
+                  <i>
+                    &#9658;&nbsp;&nbsp;Vita Fitness, Cofounder
+                  </i>
+                  <br />
+                  July 2017 - December 2017
+                  VITA Fitness was an on-demand, peer-to-peer fitness network aimed to
+                  revolutionize the personal training industry. The app replaced the process
+                  of hiring overqualified, hyper-expensive personal trainers with regular
+                  gym-goers that know what they&apos;re doing.
                 </p>
                 <p className="card-text">
-                  Dimond High School
-                  2012-2016
-                  I founded an entrepreneurship club, was varsity soccer captain,
-                  was Athletic Council president, and gave the graduation speech.
+                  <i>
+                    &#9658;&nbsp;&nbsp;Horizons, Software Engineering Student
+                  </i>
+                  <br />
+                  May 2017 - August 2017
+                  Immersive 1000-hour full-stack software engineering program focused
+                  on entrepreneurship and project-based web and mobile development in
+                  JavaScript, HTML, and CSS.
                 </p>
               </div>
             </Fade>

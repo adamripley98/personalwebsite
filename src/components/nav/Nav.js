@@ -45,7 +45,7 @@ class Nav extends Component {
             <ScrollLink to="about" text="About" />
             <ScrollLink to="content" text="Content" />
             <ScrollLink to="portfolio" text="Portfolio" />
-            <ScrollLink to="contact" text="Get in touch" />
+            <ScrollLink to="contact" text="Contact" />
           </div>
         </nav>
         <div className="nav-space" id="top" />
