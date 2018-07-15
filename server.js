@@ -4,6 +4,7 @@ const compression = require('compression');
 const morgan = require('morgan');
 const path = require('path');
 const sgMail = require('@sendgrid/mail');
+const bodyParser = require('body-parser');
 
 const app = express();
 const dev = app.get('env') !== 'production';
@@ -19,12 +20,14 @@ if (!dev) {
   app.use(morgan('dev'));
 }
 
+// Middleware
+app.use(bodyParser.json({ limit: '150mb' }));
+app.use(bodyParser.urlencoded({ limit: '150mb', extended: true }));
 app.use(express.static(path.resolve(__dirname, 'build')));
 
-app.get('/api/contact', (req, res) => {
+app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
   let error = '';
-  // Error check for empty fields
   if (!email) error = 'Email field must be populated.';
   else if (!name) error = 'Name must be populated.';
   else if (!message) error = 'Message must be populated.';
@@ -32,15 +35,13 @@ app.get('/api/contact', (req, res) => {
   if (error) {
     res.send({ success: false, error });
   } else {
-    // Create message
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
       to: 'adamripley@gmail.com',
-      from: req.body.email,
-      subject: 'Hi there!',
-      text: req.body.message,
+      from: email,
+      subject: `Email through personal site from ${name}`,
+      text: message,
     };
-
-    // Send message
     sgMail.send(msg)
       .then(() => res.send({ success: true }))
       .catch((sendgridError) => {

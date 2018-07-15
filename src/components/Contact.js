@@ -88,7 +88,8 @@ class Contact extends Component {
             });
           }
         })
-        .catch(() => {
+        .catch((e) => {
+          console.log('e', e);
           this.setState({
             error: 'Hmmm there was an error sending your message, reach us at adamripley@gmail.com',
             success: '',
