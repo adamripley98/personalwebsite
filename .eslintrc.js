@@ -9,5 +9,6 @@ module.exports = {
         "_": false,
         "window": false,
         "document": false,
+        "autosize": false,
     }
 };
