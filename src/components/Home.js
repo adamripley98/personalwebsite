@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import SmoothScroll from 'smooth-scroll';
 import Fade from 'react-reveal/Fade';
 import Headshot from '../images/headshot.png';
+import Facebook from '../images/social/facebook.svg';
+import Github from '../images/social/github.svg';
+import Email from '../images/social/email.svg';
+import Instagram from '../images/social/instagram.svg';
+import Linkedin from '../images/social/linkedin.svg';
+import Medium from '../images/social/medium.svg';
 
 class Home extends Component {
   componentDidMount() {
@@ -21,7 +27,7 @@ class Home extends Component {
 
     return (
       <div>
-        <div className="container home home-container" id="home">
+        <div className="container home" id="home">
           <div className="space-2 hidden-md-down" />
           <div className="row">
             <div className="col-12 col-md-5">
@@ -55,6 +61,28 @@ class Home extends Component {
                 </div>
               </Fade>
             </div>
+            <Fade up>
+              <div className="social-icons col-5">
+                <a href="https://www.facebook.com/adam.ripley.39" className="hvr-grow-rotate">
+                  <img alt="facebook" src={Facebook} />
+                </a>
+                <a href="mailto:adamripley@gmail.com" className="hvr-grow-rotate">
+                  <img alt="email" src={Email} />
+                </a>
+                <a href="https://github.com/adamripley98" className="hvr-grow-rotate">
+                  <img alt="github" src={Github} />
+                </a>
+                <a href="https://medium.com/@adamripley" className="hvr-grow-rotate">
+                  <img alt="medium" src={Medium} />
+                </a>
+                <a href="https://www.instagram.com/allergyadam/" className="hvr-grow-rotate">
+                  <img alt="instagram" src={Instagram} />
+                </a>
+                <a href="https://www.linkedin.com/in/adamrip/" className="hvr-grow-rotate">
+                  <img alt="linkedin" src={Linkedin} />
+                </a>
+              </div>
+            </Fade>
           </div>
           {/* <div className="space-4 hidden-lg-down" />
           <div className="space-2 hidden-xl-down" /> */}

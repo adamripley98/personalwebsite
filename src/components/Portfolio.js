@@ -8,7 +8,7 @@ import Vita from '../images/portfolio/vita.png';
 class Portfolio extends Component {
   render() {
     return (
-      <div className="container hero">
+      <div className="container" id="portfolio">
         <div className="space-2 hidden-md-down" />
         <div className="row">
           <div className="col-12 col-md-6">

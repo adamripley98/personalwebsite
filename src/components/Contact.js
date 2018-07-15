@@ -88,8 +88,7 @@ class Contact extends Component {
             });
           }
         })
-        .catch((e) => {
-          console.log('e', e);
+        .catch(() => {
           this.setState({
             error: 'Hmmm there was an error sending your message, reach us at adamripley@gmail.com',
             success: '',
@@ -101,12 +100,12 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="container hero">
+      <div className="container" id="contact">
         <div className="space-2 hidden-md-down" />
         <div className="row">
           <div className="col-12 col-md-9 offset-md-1 col-lg-7 offset-lg-1">
             <Fade right>
-              <div className="card about-card">
+              <div className="card contact-card">
                 <form onSubmit={this.handleSubmit}>
                   <h2 className="bold">
                     Reach out
