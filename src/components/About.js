@@ -24,57 +24,9 @@ class About extends Component {
       <div className="container" id="about">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-lg-7 col-xl-4">
+          <div className="col-12 col-xl-9">
             <Fade left>
-              <div className="card about-card">
-                <div className="about-header">
-                  <h1 className="about-title-text">
-                    Currently
-                  </h1>
-                  <img alt="currently" src={Currently} className="about-icon" />
-                </div>
-                <div className="line-break" />
-                <p className="card-text">
-                  &#9658;&nbsp;&nbsp;I&apos;m spending some time in Salt Lake City catching up on
-                  hitting the gym and coding for Riplo.
-                  <br />
-                  <br />
-                  &#9658;&nbsp;&nbsp;I&apos;m reading a book called&nbsp;
-                  <a href="https://en.wikipedia.org/wiki/Getting_to_Yes">
-                  &quot;Getting to Yes&quot;
-                  </a>
-                  &nbsp; and am working through an online course on
-                  algorithms.
-                  <br />
-                  <br />
-                  &#9658;&nbsp;&nbsp;In a few weeks I&apos;m heading to San Jose
-                  to visit my friend&nbsp;
-                  <a href="https://www.cameroncabo.com">
-                    Cam.
-                  </a>
-                </p>
-              </div>
-            </Fade>
-          </div>
-          <div className="col-12 col-lg-5 col-xl-3">
-            <Fade right>
-              <div className="card about-card container">
-                <div className="about-header">
-                  <h1 className="about-title-text">
-                    Skills
-                  </h1>
-                  <img alt="skills" src={Skills} className="about-icon" />
-                </div>
-                <div className="line-break" />
-                <div className="skills-container">
-                  {displaySkills()}
-                </div>
-              </div>
-            </Fade>
-          </div>
-          <div className="col-12 col-xl-5">
-            <Fade left>
-              <div className="card about-card">
+              <div className="card about-card exp">
                 <div className="about-header">
                   <h1 className="about-title-text">
                     Experience
@@ -113,7 +65,55 @@ class About extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-xl-7">
+          <div className="col-12 col-lg-5 col-xl-3">
+            <Fade right>
+              <div className="card about-card container">
+                <div className="about-header">
+                  <h1 className="about-title-text">
+                    Skills
+                  </h1>
+                  <img alt="skills" src={Skills} className="about-icon" />
+                </div>
+                <div className="line-break" />
+                <div className="skills-container">
+                  {displaySkills()}
+                </div>
+              </div>
+            </Fade>
+          </div>
+          <div className="col-12 col-lg-7 col-xl-4">
+            <Fade left>
+              <div className="card about-card">
+                <div className="about-header">
+                  <h1 className="about-title-text">
+                    Currently
+                  </h1>
+                  <img alt="currently" src={Currently} className="about-icon" />
+                </div>
+                <div className="line-break" />
+                <p className="card-text">
+                  &#9658;&nbsp;&nbsp;I&apos;m spending some time in Salt Lake City catching up on
+                  hitting the gym and coding for Riplo.
+                  <br />
+                  <br />
+                  &#9658;&nbsp;&nbsp;I&apos;m reading a book called&nbsp;
+                  <a href="https://en.wikipedia.org/wiki/Getting_to_Yes">
+                  &quot;Getting to Yes&quot;
+                  </a>
+                  &nbsp; and am working through an online course on
+                  algorithms.
+                  <br />
+                  <br />
+                  &#9658;&nbsp;&nbsp;In a few weeks I&apos;m heading to San Jose
+                  to visit my friend&nbsp;
+                  <a href="https://www.cameroncabo.com">
+                    Cam.
+                  </a>
+                </p>
+              </div>
+            </Fade>
+          </div>
+          <div className="col-12 col-xl-8">
             <Fade left>
               <div className="card about-card education">
                 <div className="about-header">
