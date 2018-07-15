@@ -24,7 +24,7 @@ class About extends Component {
       <div className="container" id="about">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-lg-7 col-xl-4">
             <Fade left>
               <div className="card about-card">
                 <div className="about-header">
@@ -56,7 +56,7 @@ class About extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-lg-5 col-xl-3">
             <Fade right>
               <div className="card about-card container">
                 <div className="about-header">
@@ -72,7 +72,7 @@ class About extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-xl-5">
             <Fade left>
               <div className="card about-card">
                 <div className="about-header">
@@ -89,10 +89,8 @@ class About extends Component {
                   <br />
                   March 2018 - Present
                   Riplo is a student-run freelance web development company centered
-                  at the University of Pennsylvania. We deliver everything from complex
-                  web applications to mobile apps to static websites. Our developers work
-                  with a variety of clients and are open to creating projects from scratch
-                  or modifying existing code bases.
+                  at Penn. We work with clients on anything from complex web apps to
+                  static websites to mobile apps.
                 </p>
                 <p className="card-text">
                   <i>
@@ -100,9 +98,8 @@ class About extends Component {
                   </i>
                   <br />
                   January 2018 - Present
-                  Penn Labs is a group of driven developers, designers, and innovators
-                  at the University of Pennsylvania, aiming to create web and mobile
-                  applications that improve the Penn community in a meaningful way.
+                  PennLabs is a group of driven developers, designers, and innovators
+                  aiming to create web and mobile apps that improve the Penn community.
                 </p>
                 <p className="card-text">
                   <i>
@@ -111,24 +108,12 @@ class About extends Component {
                   <br />
                   July 2017 - December 2017
                   VITA Fitness was an on-demand, peer-to-peer fitness network aimed to
-                  revolutionize the personal training industry. The app replaced the process
-                  of hiring overqualified, hyper-expensive personal trainers with regular
-                  gym-goers that know what they&apos;re doing.
-                </p>
-                <p className="card-text">
-                  <i>
-                    &#9658;&nbsp;&nbsp;Horizons, Software Engineering Student
-                  </i>
-                  <br />
-                  May 2017 - August 2017
-                  Immersive 1000-hour full-stack software engineering program focused
-                  on entrepreneurship and project-based web and mobile development in
-                  JavaScript, HTML, and CSS.
+                  revolutionize the personal training industry.
                 </p>
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-xl-7">
             <Fade left>
               <div className="card about-card education">
                 <div className="about-header">
@@ -140,19 +125,27 @@ class About extends Component {
                 <div className="line-break" />
                 <p className="card-text">
                   &#9658;&nbsp;&nbsp;
-                  <i>
+                  <span className="about-title">
                     University of Pennsylvania, The Wharton School
+                  </span>
+                  <br />
+                  <i>
+                    2016-Present
                   </i>
                   <br />
-                  I&apos;m studying Operations Management and Computer Science,
+                  I&apos;m studying operations and computer science,
                   was an exec board member for the entrepreneurship club,
-                  and am a backend web developer for the Signal and PennLabs.
+                  and am a web developer for the Signal and PennLabs.
                   I also made Dean&apos;s list.
                 </p>
                 <p className="card-text">
                   &#9658;&nbsp;&nbsp;
-                  <i>
+                  <span className="about-title">
                     Dimond High School
+                  </span>
+                  <br />
+                  <i clas>
+                    2012-2016
                   </i>
                   <br />
                   I founded an entrepreneurship club, was varsity soccer captain,

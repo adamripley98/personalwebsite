@@ -6,6 +6,7 @@
 @import './content';
 @import './portfolio';
 @import './contact';
+@import url('https://fonts.googleapis.com/css?family=Exo|Karla|News+Cycle|Quattrocento+Sans');
 
 /**
  * General styling
@@ -14,7 +15,11 @@ body {
   overflow-x: hidden !important;
   width: 100vw;
   font-size: 1.2rem;
-  background: rgba(0, 5, 10, 0.01);
+  background: #f5f5f5;
+  font-family: 'Exo', sans-serif;
+  background-image: url('../images/backgrounds/abstract6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {

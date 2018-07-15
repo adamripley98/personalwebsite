@@ -18,6 +18,13 @@ $gallery-bg: #eee;
   align-items: center;
 }
 
+.content-container {
+  padding: 4rem 0rem;
+  background-image: url('../images/backgrounds/abstract1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .pictures {
   margin-top: 10rem;
 }

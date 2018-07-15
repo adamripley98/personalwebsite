@@ -13,10 +13,18 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Home />
-        <About />
-        <Content />
-        <Portfolio />
-        <Contact />
+        <div className="about-container">
+          <About />
+        </div>
+        <div className="content-container">
+          <Content />
+        </div>
+        <div className="portfolio-container">
+          <Portfolio />
+        </div>
+        <div className="contact-container">
+          <Contact />
+        </div>
       </div>
     );
   }

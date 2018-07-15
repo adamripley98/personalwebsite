@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SmoothScroll from 'smooth-scroll';
 import Fade from 'react-reveal/Fade';
 import Headshot from '../images/headshot.png';
 import Facebook from '../images/social/facebook.svg';
@@ -10,21 +9,7 @@ import Linkedin from '../images/social/linkedin.svg';
 import Medium from '../images/social/medium.svg';
 
 class Home extends Component {
-  componentDidMount() {
-    const arrow = document.getElementById('arrow');
-    window.addEventListener('scroll', () => {
-      const top = document.documentElement.scrollTop;
-      if (top > 50) arrow.style.opacity = '0';
-      else arrow.style.opacity = '0.8';
-    });
-  }
-
   render() {
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
-      offset: 100,
-    });
-
     return (
       <div>
         <div className="container home" id="home">
@@ -82,45 +67,8 @@ class Home extends Component {
               </Fade>
             </div>
           </div>
-          {/* <div className="space-4 hidden-lg-down" />
-          <div className="space-2 hidden-xl-down" /> */}
-          {/* <div className="arrow-wrapper">
-            <a href="#about">
-              <i
-                id="arrow"
-                className="fa fa-chevron-down"
-                aria-hidden="true"
-                onClick={(event) => {
-                  if (document.getElementById('about')) {
-                    event.preventDefault();
-                    scroll.animateScroll(document.getElementById('about'));
-                  }
-                }}
-              />
-            </a>
-          </div> */}
-          {/* <div className="space-4 hidden-md-down" />
-          <div className="space-4 hidden-lg-down" /> */}
         </div>
-        <Fade bottom>
-          <a
-            href="#about"
-            id="arrow"
-            aria-hidden="true"
-            onClick={(event) => {
-              if (document.getElementById('about')) {
-                event.preventDefault();
-                scroll.animateScroll(document.getElementById('about'));
-              }
-            }}
-          >
-            <svg id="more-arrows">
-              <polygon className="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
-              <polygon className="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
-              <polygon className="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
-            </svg>
-          </a>
-        </Fade>
+        <div className="home-spacer" />
       </div>
     );
   }
