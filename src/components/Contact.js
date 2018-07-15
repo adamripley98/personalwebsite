@@ -106,18 +106,22 @@ class Contact extends Component {
           <div className="col-12 col-md-9 offset-md-1 col-lg-7 offset-lg-1">
             <Fade right>
               <div className="card contact-card">
-                <form onSubmit={this.handleSubmit}>
-                  <h2 className="bold">
-                    Reach out
-                  </h2>
+                <form className="contact-form" onSubmit={this.handleSubmit}>
+                  <h1 className="bold">
+                    Reach out!
+                  </h1>
+                  <p>
+                    I&apos;m always looking for exciting opportunities, new clients,
+                     and interesting conversations.
+                  </p>
                   <div className="line-break" />
                   <ErrorMessage error={this.state.error} />
                   <SuccessMessage message={this.state.success} />
-                  <input onChange={this.handleChange} name="name" value={this.state.name} className="form-control" placeholder="Name" />
-                  <input onChange={this.handleChange} name="email" value={this.state.email} className="form-control" placeholder="Email" />
-                  <textarea onChange={this.handleChange} name="message" value={this.state.message} className="form-control" placeholder="What are you looking for..." />
+                  <input onChange={this.handleChange} name="name" value={this.state.name} className="form-control name-field" placeholder="Name" />
+                  <input onChange={this.handleChange} name="email" type="email" value={this.state.email} className="form-control email-field" placeholder="Email" />
+                  <textarea onChange={this.handleChange} name="message" value={this.state.message} className="form-control message-field" placeholder="What are you looking for..." />
                   <input
-                    className="btn"
+                    className="btn contact-btn"
                     type="submit"
                     value={this.state.pending ? 'Sending...' : 'Send'}
                   />

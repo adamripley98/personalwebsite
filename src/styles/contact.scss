@@ -4,4 +4,30 @@
   background-color: #F8F8F8;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   overflow: auto;
+  text-align: left;
+}
+
+.contact-form {
+  margin: 1rem;
+}
+
+.email-field {
+  margin-bottom: 1rem;
+}
+
+.name-field {
+  margin-bottom: 1rem;
+}
+
+.message-field {
+  margin-bottom: 1rem;
+  height: 10rem;
+}
+
+.contact-btn {
+  border: 0.04rem solid #d3d3d3;
+}
+
+.contact-btn:hover{
+  opacity: 0.5;
 }
