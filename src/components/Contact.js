@@ -100,7 +100,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="container" id="contact">
+      <div className="container contact" id="contact">
         <div className="space-2 hidden-md-down" />
         <div className="row">
           <div className="col-12 col-md-9 offset-md-1 col-lg-7 offset-lg-1">

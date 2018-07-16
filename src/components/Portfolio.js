@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Nalda from '../images/portfolio/nalda.png';
 import Flourish from '../images/portfolio/flourish.png';
 import Vita from '../images/portfolio/vita.png';
+import Riplo from '../images/portfolio/riplo.svg';
 
 
 class Portfolio extends Component {
@@ -11,7 +12,30 @@ class Portfolio extends Component {
       <div className="container" id="portfolio">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-lg-6">
+            <Fade right>
+              <div className="card portfolio-card">
+                <div className="riplo-wrapper">
+                  <p className="riplo-title">
+                    Riplo
+                  </p>
+                  <img alt="riplo" src={Riplo} className="card-img-top portfolio-img riplo-icon" />
+                </div>
+                <div className="card-body">
+                  <p className="card-text portfolio-text">
+                    I&apos;m passionate about developing interesting personal projects,
+                    startup MVPs, static websites, mobile apps, and anything in between.
+                    Check out some of my past work, look through my company&nbsp;
+                    <a href="https://www.naldacampus.com">
+                      website,
+                    </a>
+                    &nbsp;and please reach out if you&apos;re looking for a freelance developer.
+                  </p>
+                </div>
+              </div>
+            </Fade>
+          </div>
+          <div className="col-12 col-lg-6">
             <Fade right>
               <div className="card portfolio-card">
                 <img alt="nalda" src={Nalda} className="card-img-top portfolio-img" />
@@ -35,7 +59,7 @@ class Portfolio extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-lg-6">
             <Fade right>
               <div className="card portfolio-card">
                 <img alt="flourish" src={Flourish} className="card-img-top portfolio-img" />
@@ -57,7 +81,7 @@ class Portfolio extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-lg-6">
             <Fade right>
               <div className="card portfolio-card hvr-grow">
                 <img alt="vita" src={Vita} className="card-img-top portfolio-img" />
