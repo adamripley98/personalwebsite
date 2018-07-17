@@ -15,6 +15,7 @@ import img12 from '../images/gallery/12.JPG';
 import img13 from '../images/gallery/13.JPG';
 import img14 from '../images/gallery/14.JPG';
 import img15 from '../images/gallery/15.JPG';
+import imgEducation from '../images/blog/education.JPG';
 
 
 class Content extends Component {
@@ -24,7 +25,7 @@ class Content extends Component {
         <div className="space-2 hidden-md-down" />
         <div className="row">
           <div className="col-xl-8 col-lg-10 offset-lg-1 col-12 offset-xl-2">
-            <Fade right>
+            <Fade down>
               <div className="card content-card pictures">
                 <h1 className="title-text">
                   Pictures
@@ -37,7 +38,7 @@ class Content extends Component {
             </Fade>
           </div>
           <div className="col-12 col-lg-6">
-            <Fade right>
+            <Fade left>
               <div className="card content-card">
                 <h1 className="title-text">
                   Blog Posts
@@ -45,7 +46,7 @@ class Content extends Component {
                 <div className="line-break" />
                 <div className="row blog-container">
                   <div className="col-4 blog-post hvr-float">
-                    <a href="https://medium.com/@adamripley/time-off-other-updates-166cafaa719f">
+                    <a href="https://medium.com/@adamripley/time-off-other-updates-166cafaa719f" target="_blank" rel="noopener noreferrer">
                       <img alt="blog" src={img1} className="blog-img" />
                       <h1 className="blog-title">
                         Time Off & Other Updates
@@ -53,15 +54,9 @@ class Content extends Component {
                     </a>
                   </div>
                   <div className="col-4 blog-post hvr-float">
-                    <img alt="blog" src={img2} className="blog-img" />
+                    <img alt="blog" src={imgEducation} className="blog-img" />
                     <h1 className="blog-title">
                       Thoughts on Education
-                    </h1>
-                  </div>
-                  <div className="col-4 blog-post hvr-float">
-                    <img alt="blog" src={img3} className="blog-img" />
-                    <h1 className="blog-title">
-                      My personal site is dank
                     </h1>
                   </div>
                 </div>
@@ -77,7 +72,7 @@ class Content extends Component {
                 <div className="line-break" />
                 <div className="row video-container">
                   <div className="col-4 video-post hvr-float">
-                    <a href="https://www.youtube.com/watch?v=bdrMPzLh-uM">
+                    <a href="https://www.youtube.com/watch?v=bdrMPzLh-uM" target="_blank" rel="noopener noreferrer">
                       <img alt="blog" src="http://i3.ytimg.com/vi/bdrMPzLh-uM/hqdefault.jpg" className="video-img" />
                       <h1 className="video-title">
                         Peachy Documentary
@@ -85,7 +80,7 @@ class Content extends Component {
                     </a>
                   </div>
                   <div className="col-4 video-post hvr-float">
-                    <a href="https://www.youtube.com/watch?v=JNBmam-uJVs">
+                    <a href="https://www.youtube.com/watch?v=JNBmam-uJVs" target="_blank" rel="noopener noreferrer">
                       <img alt="blog" src="http://i3.ytimg.com/vi/JNBmam-uJVs/hqdefault.jpg" className="video-img" />
                       <h1 className="video-title">
                         1 Second Every Day - 2017
@@ -93,7 +88,7 @@ class Content extends Component {
                     </a>
                   </div>
                   <div className="col-4 video-post hvr-float">
-                    <a href="https://www.youtube.com/watch?v=MYW3XA3jP-8">
+                    <a href="https://www.youtube.com/watch?v=MYW3XA3jP-8" target="_blank" rel="noopener noreferrer">
                       <img alt="blog" src="http://i3.ytimg.com/vi/MYW3XA3jP-8/hqdefault.jpg" className="video-img" />
                       <h1 className="video-title">
                         Vita Fitness Pitch

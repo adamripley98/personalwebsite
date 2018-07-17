@@ -12,7 +12,7 @@ class Portfolio extends Component {
         <div className="space-2 hidden-md-down" />
         <div className="row">
           <div className="offset-xl-2 col-xl-8 col-lg-10 offset-lg-1 col-12">
-            <Fade right>
+            <Fade down>
               <div className="card portfolio-card-riplo">
                 <div className="riplo-wrapper">
                   <p className="riplo-title">
@@ -25,7 +25,7 @@ class Portfolio extends Component {
                     I&apos;m passionate about developing interesting personal projects,
                     startup MVPs, static websites, mobile apps, and anything in between.
                     Check out some of my past work, look through my company&nbsp;
-                    <a href="https://www.naldacampus.com">
+                    <a href="https://www.riplo.io/" target="_blank" rel="noopener noreferrer">
                       website,
                     </a>
                     &nbsp;and please reach out if you&apos;re looking for a freelance developer.
@@ -35,48 +35,52 @@ class Portfolio extends Component {
             </Fade>
           </div>
           <div className="col-xl-6 col-lg-10 offset-xl-0 offset-lg-1 col-12">
-            <Fade right>
+            <Fade left>
               <div className="card portfolio-card">
-                <img alt="nalda" src={Nalda} className="card-img-top portfolio-img" />
-                <div className="card-body">
-                  <h1 className="portfolio-title">
-                    Nalda Campus
-                  </h1>
-                  <div className="line-break" />
-                  <p className="card-text portfolio-text">
-                    Web app for startup offering curated listings, articles, and videos
-                    for food and activites around college campuses. Currently developing
-                    a mobile application for the company as well. Check it out&nbsp;
-                    <a href="https://www.naldacampus.com">
-                      here.
-                    </a>
-                  </p>
-                  <p className="card-text portfolio-text technologies">
-                    Built using React/Redux, Node, Express, MongoDB, Passport, AWS S3.
-                  </p>
-                </div>
+                <a href="https://www.naldacampus.com" className="link-no-style" target="_blank" rel="noopener noreferrer">
+                  <img alt="nalda" src={Nalda} className="card-img-top portfolio-img" />
+                  <div className="card-body">
+                    <h1 className="portfolio-title">
+                      Nalda Campus
+                    </h1>
+                    <div className="line-break" />
+                    <p className="card-text portfolio-text">
+                      Web app for startup offering curated listings, articles, and videos
+                      for food and activites around college campuses. Currently developing
+                      a mobile application for the company as well. Check it out&nbsp;
+                      <a href="https://www.naldacampus.com" target="_blank" rel="noopener noreferrer">
+                        here.
+                      </a>
+                    </p>
+                    <p className="card-text portfolio-text technologies">
+                      Built using React/Redux, Node, Express, MongoDB, Passport, AWS S3.
+                    </p>
+                  </div>
+                </a>
               </div>
             </Fade>
           </div>
           <div className="col-xl-6 col-lg-10 offset-xl-0 offset-lg-1 col-12">
             <Fade right>
               <div className="card portfolio-card">
-                <img alt="flourish" src={Flourish} className="card-img-top portfolio-img" />
-                <h1 className="portfolio-title">
-                  Flourish Change
-                </h1>
-                <div className="line-break" />
-                <p className="card-text portfolio-text">
-                  Web app for microdonation platform allowing millenials to donate to and
-                  keep accountable charities of their choice. Handled mostly frontend including
-                  onboarding flow, donation process, and admin panel. Check it out&nbsp;
-                  <a href="https://www.flourishchange.com">
-                    here.
-                  </a>
-                </p>
-                <p className="card-text portfolio-text technologies">
-                  Built using React, Redux, Node.
-                </p>
+                <a href="https://flourishchange.com" className="link-no-style" target="_blank" rel="noopener noreferrer">
+                  <img alt="flourish" src={Flourish} className="card-img-top portfolio-img" />
+                  <h1 className="portfolio-title">
+                    Flourish Change
+                  </h1>
+                  <div className="line-break" />
+                  <p className="card-text portfolio-text">
+                    Web app for microdonation platform allowing millenials to donate to and
+                    keep accountable charities of their choice. Handled mostly frontend including
+                    onboarding flow, donation process, and admin panel. Check it out&nbsp;
+                    <a href="https://flourishchange.com" target="_blank" rel="noopener noreferrer">
+                      here.
+                    </a>
+                  </p>
+                  <p className="card-text portfolio-text technologies">
+                    Built using React, Redux, Node.
+                  </p>
+                </a>
               </div>
             </Fade>
           </div>

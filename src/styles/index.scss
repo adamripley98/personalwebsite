@@ -62,3 +62,14 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.link-no-style {
+  text-decoration: none;
+  color: black;
+}
+
+.link-no-style:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}

@@ -66,7 +66,7 @@ class About extends Component {
             </Fade>
           </div>
           <div className="col-12 col-lg-5 col-xl-3">
-            <Fade right>
+            <Fade down>
               <div className="card about-card container">
                 <div className="about-header">
                   <h1 className="about-title-text">
@@ -82,7 +82,7 @@ class About extends Component {
             </Fade>
           </div>
           <div className="col-12 col-lg-7 col-xl-4">
-            <Fade left>
+            <Fade up>
               <div className="card about-card">
                 <div className="about-header">
                   <h1 className="about-title-text">
@@ -93,11 +93,14 @@ class About extends Component {
                 <div className="line-break" />
                 <p className="card-text">
                   &#9658;&nbsp;&nbsp;I&apos;m spending some time in Salt Lake City catching up on
-                  hitting the gym and coding for Riplo.
+                  hitting the gym and coding for&nbsp;
+                  <a href="https://www.riplo.io" target="_blank" rel="noopener noreferrer">
+                    Riplo.
+                  </a>
                   <br />
                   <br />
                   &#9658;&nbsp;&nbsp;I&apos;m reading a book called&nbsp;
-                  <a href="https://en.wikipedia.org/wiki/Getting_to_Yes">
+                  <a href="https://en.wikipedia.org/wiki/Getting_to_Yes" target="_blank" rel="noopener noreferrer">
                   &quot;Getting to Yes&quot;
                   </a>
                   &nbsp; and am working through an online course on
@@ -106,7 +109,7 @@ class About extends Component {
                   <br />
                   &#9658;&nbsp;&nbsp;In a few weeks I&apos;m heading to San Jose
                   to visit my friend&nbsp;
-                  <a href="https://www.cameroncabo.com">
+                  <a href="https://www.cameroncabo.com" target="_blank" rel="noopener noreferrer">
                     Cam.
                   </a>
                 </p>
@@ -114,7 +117,7 @@ class About extends Component {
             </Fade>
           </div>
           <div className="col-12 col-xl-8">
-            <Fade left>
+            <Fade right>
               <div className="card about-card education">
                 <div className="about-header">
                   <h1 className="about-title-text">
@@ -135,8 +138,15 @@ class About extends Component {
                   <br />
                   I&apos;m studying operations and computer science,
                   was an exec board member for the entrepreneurship club,
-                  and am a web developer for the Signal and PennLabs.
-                  I also made Dean&apos;s list.
+                  and am a web developer for the&nbsp;
+                  <a href="http://thesign.al/" target="_blank" rel="noopener noreferrer">
+                    Signal
+                  </a>
+                  &nbsp;and&nbsp;
+                  <a href="https://pennlabs.org/" target="_blank" rel="noopener noreferrer">
+                    PennLabs.
+                  </a>
+                  &nbsp;I also made Dean&apos;s list.
                 </p>
                 <p className="card-text">
                   &#9658;&nbsp;&nbsp;

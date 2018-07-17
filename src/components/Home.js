@@ -21,22 +21,22 @@ class Home extends Component {
               </Fade>
               <Fade up>
                 <div className="social-icons">
-                  <a href="https://www.facebook.com/adam.ripley.39" className="hvr-grow-rotate">
+                  <a href="https://www.facebook.com/adam.ripley.39" className="hvr-grow-rotate" target="_blank" rel="noopener noreferrer">
                     <img alt="facebook" src={Facebook} />
                   </a>
                   <a href="mailto:adamripley@gmail.com" className="hvr-grow-rotate">
                     <img alt="email" src={Email} />
                   </a>
-                  <a href="https://github.com/adamripley98" className="hvr-grow-rotate">
+                  <a href="https://github.com/adamripley98" className="hvr-grow-rotate" target="_blank" rel="noopener noreferrer">
                     <img alt="github" src={Github} />
                   </a>
-                  <a href="https://medium.com/@adamripley" className="hvr-grow-rotate">
+                  <a href="https://medium.com/@adamripley" className="hvr-grow-rotate" target="_blank" rel="noopener noreferrer">
                     <img alt="medium" src={Medium} />
                   </a>
-                  <a href="https://www.instagram.com/allergyadam/" className="hvr-grow-rotate">
+                  <a href="https://www.instagram.com/allergyadam/" className="hvr-grow-rotate" target="_blank" rel="noopener noreferrer">
                     <img alt="instagram" src={Instagram} />
                   </a>
-                  <a href="https://www.linkedin.com/in/adamrip/" className="hvr-grow-rotate">
+                  <a href="https://www.linkedin.com/in/adamrip/" className="hvr-grow-rotate" target="_blank" rel="noopener noreferrer">
                     <img alt="linkedin" src={Linkedin} />
                   </a>
                 </div>
