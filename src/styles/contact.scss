@@ -7,6 +7,14 @@
   text-align: left;
 }
 
+.contact-container {
+  padding: 2rem 0rem;
+  padding-bottom: 4rem;
+  background-image: url('../images/backgrounds/abstract4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .contact-form {
   margin: 1rem;
 }
@@ -34,4 +42,21 @@
 
 .contact {
   margin-bottom: 4rem;
+}
+
+.footer-text {
+  color: white;
+}
+
+.footer {
+    position: absolute;
+    margin-top: 5rem;
+    width: 100%;
+    color: white;
+    @media(min-width: 576px) {
+      text-align: right;
+    }
+    @media(max-width: 576px) {
+      text-align: center;
+    }
 }

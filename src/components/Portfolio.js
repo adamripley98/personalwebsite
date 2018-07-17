@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Nalda from '../images/portfolio/nalda.png';
 import Flourish from '../images/portfolio/flourish.png';
-import Vita from '../images/portfolio/vita.png';
 import Riplo from '../images/portfolio/riplo.svg';
 
 
@@ -12,9 +11,9 @@ class Portfolio extends Component {
       <div className="container" id="portfolio">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-lg-6">
+          <div className="offset-xl-2 col-xl-8 col-lg-10 offset-lg-1 col-12">
             <Fade right>
-              <div className="card portfolio-card">
+              <div className="card portfolio-card-riplo">
                 <div className="riplo-wrapper">
                   <p className="riplo-title">
                     Riplo
@@ -35,7 +34,7 @@ class Portfolio extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-xl-6 col-lg-10 offset-xl-0 offset-lg-1 col-12">
             <Fade right>
               <div className="card portfolio-card">
                 <img alt="nalda" src={Nalda} className="card-img-top portfolio-img" />
@@ -59,7 +58,7 @@ class Portfolio extends Component {
               </div>
             </Fade>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-xl-6 col-lg-10 offset-xl-0 offset-lg-1 col-12">
             <Fade right>
               <div className="card portfolio-card">
                 <img alt="flourish" src={Flourish} className="card-img-top portfolio-img" />
@@ -77,24 +76,6 @@ class Portfolio extends Component {
                 </p>
                 <p className="card-text portfolio-text technologies">
                   Built using React, Redux, Node.
-                </p>
-              </div>
-            </Fade>
-          </div>
-          <div className="col-12 col-lg-6">
-            <Fade right>
-              <div className="card portfolio-card hvr-grow">
-                <img alt="vita" src={Vita} className="card-img-top portfolio-img" />
-                <h1 className="portfolio-title">
-                  VITA Fitness
-                </h1>
-                <div className="line-break" />
-                <p className="card-text portfolio-text">
-                  Mobile application for an on-demand, peer-to-peer fitness network
-                  that removes the need for personal trainers for entry-level gym-goers.
-                </p>
-                <p className="card-text portfolio-text technologies">
-                  Built using React Native, Firebase, Google Maps API.
                 </p>
               </div>
             </Fade>

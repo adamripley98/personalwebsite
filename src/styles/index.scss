@@ -11,6 +11,10 @@
 /**
  * General styling
  */
+
+html {
+  overflow-x: hidden !important;
+}
 body {
   overflow-x: hidden !important;
   width: 100vw;

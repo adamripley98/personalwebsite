@@ -7,6 +7,22 @@
   height: 70vh;
 }
 
+.portfolio-card-riplo {
+  margin-top: 10vh;
+  background-color: #F8F8F8;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow: hidden;
+  align-items: center;
+}
+
+.portfolio-container {
+  padding: 2rem 0rem;
+  padding-bottom: 4rem;
+  background-image: url('../images/backgrounds/abstract10.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .portfolio-img {
   width: 103%;
   height: 58%;

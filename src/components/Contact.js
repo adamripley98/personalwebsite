@@ -103,7 +103,7 @@ class Contact extends Component {
       <div className="container contact" id="contact">
         <div className="space-2 hidden-md-down" />
         <div className="row">
-          <div className="col-12 col-md-9 offset-md-1 col-lg-7 offset-lg-1">
+          <div className="col-xl-10 offset-xl-1 col-12">
             <Fade right>
               <div className="card contact-card">
                 <form className="contact-form" onSubmit={this.handleSubmit}>
@@ -130,10 +130,13 @@ class Contact extends Component {
             </Fade>
           </div>
         </div>
-        <div className="space-4 hidden-lg-down" />
-        <div className="space-2 hidden-xl-down" />
-        <div className="space-4 hidden-md-down" />
-        <div className="space-4 hidden-lg-down" />
+        <footer>
+          <div className="container-fluid footer">
+            <p className="footer-text">
+              Adam Ripley &copy; 2018. All rights reserved.
+            </p>
+          </div>
+        </footer>
       </div>
     );
   }
