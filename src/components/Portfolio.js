@@ -15,20 +15,27 @@ class Portfolio extends Component {
             <Fade down>
               <div className="card portfolio-card-riplo">
                 <div className="riplo-wrapper">
+                  <img alt="riplo" src={Riplo} className="card-img-top portfolio-img riplo-icon" />
                   <p className="riplo-title">
                     Riplo
                   </p>
-                  <img alt="riplo" src={Riplo} className="card-img-top portfolio-img riplo-icon" />
                 </div>
+                <div className="line-break" />
                 <div className="card-body">
-                  <p className="card-text portfolio-text">
-                    I&apos;m passionate about developing interesting personal projects,
-                    startup MVPs, static websites, mobile apps, and anything in between.
+                  <p className="card-text portfolio-text riplo-text">
+                    I&apos;m passionate about building interesting personal projects,
+                    startup MVPs, static websites, mobile apps, and everything in between.
+                  </p>
+                  <p className="card-text portfolio-text riplo-text">
                     Check out some of my past work, look through my company&nbsp;
                     <a href="https://www.riplo.io/" target="_blank" rel="noopener noreferrer">
                       website,
                     </a>
-                    &nbsp;and please reach out if you&apos;re looking for a freelance developer.
+                    &nbsp;and please&nbsp;
+                    <a href="mailto:adamripley@gmail.com">
+                      reach out
+                    </a>
+                     &nbsp;if you&apos;re looking for a freelance developer.
                   </p>
                 </div>
               </div>

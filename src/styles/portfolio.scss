@@ -20,6 +20,7 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   overflow: hidden;
   align-items: center;
+  padding: 0rem 1rem 2rem 1rem;
 }
 
 .portfolio-container {
@@ -53,13 +54,20 @@
 .riplo-title {
   font-family: "PT Sans","Roboto",sans-serif;
   float: right;
+  font-size: 3rem;
+  font-weight:bold;
 }
 
 .riplo-icon {
-  width: 9rem;
+  width: 4rem;
+  margin-right: 0.5rem;
 }
 
 .riplo-wrapper {
-  margin-top: 3rem;
-  margin-right: 10rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.riplo-text {
+  font-size: 1.4rem;
 }
