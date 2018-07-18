@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Logo from '../../images/logo.svg';
-import ScrollLink from './ScrollLink';
 
 class Nav extends Component {
   constructor(props) {
@@ -41,11 +40,21 @@ class Nav extends Component {
             <img className="logo" alt="Riplo" src={Logo} />
           </Fade>
           <div className="links">
-            <ScrollLink to="top" text="Home" hiddenMdDown />
-            <ScrollLink to="about" text="About" />
-            <ScrollLink to="content" text="Content" />
-            <ScrollLink to="portfolio" text="Portfolio" />
-            <ScrollLink to="contact" text="Contact" />
+            <a href="#top">
+              Home
+            </a>
+            <a href="#about">
+              About
+            </a>
+            <a href="#content">
+              Content
+            </a>
+            <a href="#portfolio">
+              Portfolio
+            </a>
+            <a href="#contact">
+              Contact
+            </a>
           </div>
         </nav>
         <div className="nav-space" id="top" />

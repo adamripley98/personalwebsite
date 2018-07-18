@@ -91,7 +91,7 @@ class Contact extends Component {
         })
         .catch(() => {
           this.setState({
-            error: 'Hmmm there was an error sending your message, reach us at adamripley@gmail.com',
+            error: 'Hmmm there was an error sending your message...reach me at adamripley@gmail.com',
             success: '',
             pending: false,
           });
