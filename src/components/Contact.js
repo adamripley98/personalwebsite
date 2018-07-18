@@ -4,6 +4,7 @@ import autosize from 'autosize';
 import axios from 'axios';
 import ErrorMessage from './ErrorMessage';
 import SuccessMessage from './SuccessMessage';
+import Mail from '../images/content/mail.svg';
 
 class Contact extends Component {
   constructor(props) {
@@ -107,9 +108,12 @@ class Contact extends Component {
             <Fade right>
               <div className="card contact-card">
                 <form className="contact-form" onSubmit={this.handleSubmit}>
-                  <h1 className="bold">
-                    Reach out!
-                  </h1>
+                  <div className="contact-title-wrap">
+                    <img src={Mail} alt="mail" className="contact-icon" />
+                    <h1 className="contact-title">
+                      Reach out!
+                    </h1>
+                  </div>
                   <p>
                     I&apos;m always looking for exciting opportunities, new clients,
                      and interesting conversations.

@@ -15,6 +15,17 @@
 
 .exp {
   padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.ed {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.cu {
+  padding-top: 1.8rem;
+  padding-bottom: 1rem;
 }
 
 .experience-title {
@@ -23,9 +34,21 @@
 }
 
 .about-icon {
-  visibility: hidden;
-  width: 0%;
+  width: 3.3rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
 }
+
+.about-title-text {
+  display: inline-block;
+  text-align: left;
+}
+
+.about-header {
+  text-align: left;
+  margin-left: 1rem;
+}
+
 
 .tag {
   font-size: 16px;
@@ -36,11 +59,6 @@
   margin-right: 0.6rem;
   margin-bottom: 0.6rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.18);
-}
-
-.about-title-text {
-  text-align: left;
-  margin-left: 1rem;
 }
 
 .education {

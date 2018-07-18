@@ -16,6 +16,9 @@ import img13 from '../images/gallery/13.JPG';
 import img14 from '../images/gallery/14.JPG';
 import img15 from '../images/gallery/15.JPG';
 import imgEducation from '../images/blog/education.JPG';
+import Blog from '../images/content/blog.svg';
+import Camera from '../images/content/camera.svg';
+import Video from '../images/content/video.svg';
 
 
 class Content extends Component {
@@ -27,9 +30,12 @@ class Content extends Component {
           <div className="col-xl-8 col-lg-10 offset-lg-1 col-12 offset-xl-2">
             <Fade down>
               <div className="card content-card pictures">
-                <h1 className="title-text">
-                  Pictures
-                </h1>
+                <div className="content-header-wrap">
+                  <img alt="camera" src={Camera} className="content-icon" />
+                  <h1 className="title-text">
+                    Pictures
+                  </h1>
+                </div>
                 <div className="line-break" />
                 <div className="gallery-container">
                   <div className="demo__gallery" />
@@ -40,9 +46,12 @@ class Content extends Component {
           <div className="col-12 col-lg-6">
             <Fade left>
               <div className="card content-card">
-                <h1 className="title-text">
-                  Blog Posts
-                </h1>
+                <div className="content-header-wrap">
+                  <img alt="blog" src={Blog} className="content-icon" />
+                  <h1 className="title-text">
+                    Blog Posts
+                  </h1>
+                </div>
                 <div className="line-break" />
                 <div className="row blog-container">
                   <div className="col-4 blog-post hvr-float">
@@ -66,9 +75,12 @@ class Content extends Component {
           <div className="col-12 col-lg-6">
             <Fade right>
               <div className="card content-card video">
-                <h1 className="title-text">
-                  Videos
-                </h1>
+                <div className="content-header-wrap">
+                  <img alt="video" src={Video} className="content-icon" />
+                  <h1 className="title-text">
+                    Videos
+                  </h1>
+                </div>
                 <div className="line-break" />
                 <div className="row video-container">
                   <div className="col-4 video-post hvr-float">

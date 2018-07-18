@@ -45,7 +45,7 @@ class Home extends Component {
             <div className="col-12 col-lg-7">
               <Fade right>
                 <div className="card home-card">
-                  <h1 className="title-text">
+                  <h1 className="home-title-text">
                     Hi, I&apos;m Adam!
                   </h1>
                   <p className="description-text">

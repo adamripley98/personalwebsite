@@ -28,10 +28,10 @@ class About extends Component {
             <Fade left>
               <div className="card about-card exp">
                 <div className="about-header">
+                  <img alt="experience" src={Experience} className="about-icon" />
                   <h1 className="about-title-text">
                     Experience
                   </h1>
-                  <img alt="experience" src={Experience} className="about-icon" />
                 </div>
                 <div className="line-break" />
                 <p className="card-text">
@@ -81,10 +81,10 @@ class About extends Component {
             <Fade down>
               <div className="card about-card container">
                 <div className="about-header">
+                  <img alt="skills" src={Skills} className="about-icon" />
                   <h1 className="about-title-text">
                     Skills
                   </h1>
-                  <img alt="skills" src={Skills} className="about-icon" />
                 </div>
                 <div className="line-break" />
                 <div className="skills-container">
@@ -95,12 +95,12 @@ class About extends Component {
           </div>
           <div className="col-12 col-lg-7 col-xl-4">
             <Fade up>
-              <div className="card about-card">
+              <div className="card about-card cu">
                 <div className="about-header">
+                  <img alt="currently" src={Currently} className="about-icon" />
                   <h1 className="about-title-text">
                     Currently
                   </h1>
-                  <img alt="currently" src={Currently} className="about-icon" />
                 </div>
                 <div className="line-break" />
                 <p className="card-text">
@@ -130,12 +130,12 @@ class About extends Component {
           </div>
           <div className="col-12 col-xl-8">
             <Fade right>
-              <div className="card about-card education">
+              <div className="card about-card ed">
                 <div className="about-header">
+                  <img alt="education" src={Education} className="about-icon" />
                   <h1 className="about-title-text">
                     Education
                   </h1>
-                  <img alt="education" src={Education} className="about-icon" />
                 </div>
                 <div className="line-break" />
                 <p className="card-text">

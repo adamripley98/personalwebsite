@@ -15,7 +15,7 @@ class Portfolio extends Component {
             <Fade down>
               <div className="card portfolio-card-riplo">
                 <div className="riplo-wrapper">
-                  <img alt="riplo" src={Riplo} className="card-img-top portfolio-img riplo-icon" />
+                  <img alt="riplo" src={Riplo} className="riplo-icon" />
                   <p className="riplo-title">
                     Riplo
                   </p>
