@@ -35,30 +35,42 @@ class About extends Component {
                 </div>
                 <div className="line-break" />
                 <p className="card-text">
+                  &#9658;&nbsp;&nbsp;
+                  <span className="experience-title">
+                    Riplo Ventures, Cofounder & Developer
+                  </span>
+                  &nbsp;&nbsp;
                   <i>
-                    &#9658;&nbsp;&nbsp;Riplo Ventures, Cofounder & Developer
+                    (March 2018 - Present)
                   </i>
                   <br />
-                  March 2018 - Present
                   Riplo is a student-run freelance web development company centered
                   at Penn. We work with clients on anything from complex web apps to
                   static websites to mobile apps.
                 </p>
                 <p className="card-text">
+                  &#9658;&nbsp;&nbsp;
+                  <span className="experience-title">
+                    PennLabs, Backend Developer
+                  </span>
+                  &nbsp;&nbsp;
                   <i>
-                    &#9658;&nbsp;&nbsp;PennLabs, Backend Developer
+                    (January 2018 - Present)
                   </i>
                   <br />
-                  January 2018 - Present
                   PennLabs is a group of driven developers, designers, and innovators
                   aiming to create web and mobile apps that improve the Penn community.
                 </p>
                 <p className="card-text">
+                  &#9658;&nbsp;&nbsp;
+                  <span className="experience-title">
+                    Vita Fitness, Cofounder
+                  </span>
+                  &nbsp;&nbsp;
                   <i>
-                    &#9658;&nbsp;&nbsp;Vita Fitness, Cofounder
+                    (July 2017 - December 2017)
                   </i>
                   <br />
-                  July 2017 - December 2017
                   VITA Fitness was an on-demand, peer-to-peer fitness network aimed to
                   revolutionize the personal training industry.
                 </p>
@@ -92,22 +104,22 @@ class About extends Component {
                 </div>
                 <div className="line-break" />
                 <p className="card-text">
-                  &#9658;&nbsp;&nbsp;I&apos;m spending some time in Salt Lake City catching up on
-                  hitting the gym and coding for&nbsp;
+                  &#9658;&nbsp;&nbsp;I&apos;m spending some time in Lake Tahoe enjoying
+                  some nature and catching up on coding for&nbsp;
                   <a href="https://www.riplo.io" target="_blank" rel="noopener noreferrer">
                     Riplo.
                   </a>
                   <br />
                   <br />
                   &#9658;&nbsp;&nbsp;I&apos;m reading a book called&nbsp;
-                  <a href="https://en.wikipedia.org/wiki/Getting_to_Yes" target="_blank" rel="noopener noreferrer">
-                  &quot;Getting to Yes&quot;
+                  <a href="https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike-ebook/dp/B0176M1A44" target="_blank" rel="noopener noreferrer">
+                  &quot;Shoe Dog&quot;
                   </a>
                   &nbsp; and am working through an online course on
                   algorithms.
                   <br />
                   <br />
-                  &#9658;&nbsp;&nbsp;In a few weeks I&apos;m heading to San Jose
+                  &#9658;&nbsp;&nbsp;In a couple days I&apos;m heading to San Jose
                   to visit my friend&nbsp;
                   <a href="https://www.cameroncabo.com" target="_blank" rel="noopener noreferrer">
                     Cam.
@@ -128,12 +140,12 @@ class About extends Component {
                 <div className="line-break" />
                 <p className="card-text">
                   &#9658;&nbsp;&nbsp;
-                  <span className="about-title">
+                  <span className="experience-title">
                     University of Pennsylvania, The Wharton School
                   </span>
-                  <br />
+                  &nbsp;&nbsp;
                   <i>
-                    2016-Present
+                    (2016-Present)
                   </i>
                   <br />
                   I&apos;m studying operations and computer science,
@@ -150,12 +162,12 @@ class About extends Component {
                 </p>
                 <p className="card-text">
                   &#9658;&nbsp;&nbsp;
-                  <span className="about-title">
+                  <span className="experience-title">
                     Dimond High School
                   </span>
-                  <br />
-                  <i clas>
-                    2012-2016
+                  &nbsp;&nbsp;
+                  <i>
+                    (2012-2016)
                   </i>
                   <br />
                   I founded an entrepreneurship club, was varsity soccer captain,
