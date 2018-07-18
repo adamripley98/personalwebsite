@@ -1,10 +1,17 @@
 .portfolio-card {
   margin-top: 10vh;
-  background-color: #F8F8F8;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   overflow: hidden;
   align-items: center;
-  height: 70vh;
+  padding-bottom: 1rem;
+}
+
+.nalda {
+  background-color: #e5f4fb;
+}
+
+.flourish {
+  background-color: #f0fcef;
 }
 
 .portfolio-card-riplo {
@@ -25,11 +32,14 @@
 
 .portfolio-img {
   width: 103%;
-  height: 58%;
 }
 
 .portfolio-title {
   font-size: 2rem;
+  text-align: left;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 1.3rem;
 }
 
 .portfolio-description {

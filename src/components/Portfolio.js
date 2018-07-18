@@ -36,24 +36,25 @@ class Portfolio extends Component {
           </div>
           <div className="col-xl-6 col-lg-10 offset-xl-0 offset-lg-1 col-12">
             <Fade left>
-              <div className="card portfolio-card">
+              <div className="card portfolio-card nalda">
                 <a href="https://www.naldacampus.com" className="link-no-style" target="_blank" rel="noopener noreferrer">
                   <img alt="nalda" src={Nalda} className="card-img-top portfolio-img" />
-                  <div className="card-body">
+                  <div className="nalda-card-body">
                     <h1 className="portfolio-title">
                       Nalda Campus
                     </h1>
                     <div className="line-break" />
                     <p className="card-text portfolio-text">
                       Web app for startup offering curated listings, articles, and videos
-                      for food and activites around college campuses. Currently developing
-                      a mobile application for the company as well. Check it out&nbsp;
+                      for food and activites around college campuses.  Worked mostly on
+                      backend - currently developing a mobile app for the company as well.
+                      Check it out&nbsp;
                       <a href="https://www.naldacampus.com" target="_blank" rel="noopener noreferrer">
                         here.
                       </a>
                     </p>
                     <p className="card-text portfolio-text technologies">
-                      Built using React/Redux, Node, Express, MongoDB, Passport, AWS S3.
+                      Built using React/Redux, Node, Express, MongoDB, Passport.
                     </p>
                   </div>
                 </a>
@@ -62,7 +63,7 @@ class Portfolio extends Component {
           </div>
           <div className="col-xl-6 col-lg-10 offset-xl-0 offset-lg-1 col-12">
             <Fade right>
-              <div className="card portfolio-card">
+              <div className="card portfolio-card flourish">
                 <a href="https://flourishchange.com" className="link-no-style" target="_blank" rel="noopener noreferrer">
                   <img alt="flourish" src={Flourish} className="card-img-top portfolio-img" />
                   <h1 className="portfolio-title">
