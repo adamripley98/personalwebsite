@@ -25,9 +25,11 @@
 .contact-container {
   padding: 2rem 0rem;
   padding-bottom: 4rem;
-  background-image: url('../images/backgrounds/background11.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url('../images/backgrounds/background11.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .contact-form {

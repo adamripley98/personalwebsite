@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
 import Logo from '../../images/logo.svg';
 
 class Nav extends Component {
@@ -23,8 +22,13 @@ class Nav extends Component {
       }
     };
 
+    const getBodyScrollTop = () => {
+      const el = document.scrollingElement || document.documentElement;
+      return el.scrollTop;
+    };
+
     window.addEventListener('scroll', () => {
-      if (document.documentElement.scrollTop > 20) {
+      if (getBodyScrollTop() > 20) {
         scrolled();
       } else {
         unscrolled();
@@ -36,9 +40,9 @@ class Nav extends Component {
     return (
       <div>
         <nav className={this.state.scrolled ? 'scrolled' : ''}>
-          <Fade top>
+          <a href="#top">
             <img className="logo" alt="Riplo" src={Logo} />
-          </Fade>
+          </a>
           <div className="links">
             <a href="#top">
               Home

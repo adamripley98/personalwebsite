@@ -19,10 +19,12 @@ $partSize: 120px;
 
 .content-container {
   padding: 1.5rem 0rem;
-  background-image: url('../images/backgrounds/abstract1.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding-bottom: 4rem;
+  background: url('../images/backgrounds/abstract1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .pictures {

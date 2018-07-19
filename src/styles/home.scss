@@ -1,3 +1,13 @@
+.home-container {
+  margin-top: -4rem;
+  padding-bottom: 4rem;
+  background: url('../images/backgrounds/abstract6.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .home-card {
   padding:2rem 1rem;
   background-color: #F8F8F8;
@@ -13,7 +23,7 @@
 }
 
 .home-spacer {
-  margin: 20vh;
+  margin: 4rem;
 }
 
 .social-icons img {
