@@ -2,8 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <meta name="author" content="Adam Ripley">
+
+
+    <!-- Open graph tags and twitter tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Adam Ripley">
+    <meta property="og:url" content="adamripley.com"/>
+    <meta property="twitter:url" content="adamripley.com"/>
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -21,6 +30,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Adam Ripley</title>
+    <meta property="og:title" content="Adam Ripley">
+    <meta property="twitter:title" content="Adam Ripley">
+    <meta name="description" content="Personal website for Adam Ripley - student at University of Pennsylvania and developer at Riplo.">
+    <meta property="og:description" content="Personal website for Adam Ripley - student at University of Pennsylvania and developer at Riplo.">
+    <meta property="twitter:description" content="Personal website for Adam Ripley - student at University of Pennsylvania and developer at Riplo.">
+    <meta name="keywords" content="adam,ripley,adamripley,penn,wharton,business,entrepreneur,computer science,web,webdev,freelance,pennsylvania,philadelphia,college,ivy league,digital,nomad,digitalnomad,riplo,development,coding,javascript,node,react,express,developer,mongo,backend,frontend,anchorage,alaska,riplo">
+    <meta property="og:image" content="/images/abstract4.png">
+    <meta property="twitter:image" content="/images/abstract4.png">
+    <meta name="twitter:card" content="summary_large_image"/>
   </head>
   <body>
     <noscript>
@@ -41,18 +59,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- <script src="/js/smoothscroll.js"></script> -->
-    <script>
-    // Document ready shorthand statement
-      $(function() {
-        $('.nav-link').click(function() {
-          console.log('clicked');
-          var id = $(this).attr('href');
-          $('html,body').animate({ scrollTop: $(id).offset().top }, 'slow');
-          // Prevent default behavior of link
-          return false;
-        });
-      });
-    </script>
 
   </body>
 </html>
