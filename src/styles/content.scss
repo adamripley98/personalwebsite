@@ -20,15 +20,19 @@ $partSize: 120px;
 .content-container {
   padding: 1.5rem 0rem;
   padding-bottom: 4rem;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   @media(min-width: 576px) {
     background: url('../images/backgrounds/abstract1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   @media(max-width: 576px) {
     background: url('../images/backgrounds/abstract1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -103,6 +107,10 @@ $partSize: 120px;
   color: black;
 }
 
+.video-container {
+  margin: 0 auto;
+}
+
 .gallery-container {
   @media(max-width: 768px) {
     margin: 0 -4rem -4rem -4rem;
@@ -146,7 +154,11 @@ $partSize: 120px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
+  -moz-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -157,6 +169,8 @@ $partSize: 120px;
 }
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
@@ -189,12 +203,21 @@ $partSize: 120px;
     height: $partSize;
     margin: $margins;
 
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all $transTime ease-in-out;
 
     &:hover .demo__part-front {
+      -webkit-box-shadow: 0 0 $shadow-size black;
+      -moz-box-shadow: 0 0 $shadow-size black;
       box-shadow: 0 0 $shadow-size black;
+      -webkit-transform: scale(0.96);
+      -moz-transform: scale(0.96);
+      -ms-transform: scale(0.96);
       transform: scale(0.96);
 
       &:after {
@@ -223,6 +246,9 @@ $partSize: 120px;
     background-size: cover;
     background-position: center;
 
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
     transform: rotateX(0deg);
     transition: all $transTime / 1.5 ease;
 
@@ -243,6 +269,9 @@ $partSize: 120px;
   }
 
   &__part-back {
+    -webkit-transform: rotateY(180deg) rotateX(0deg);
+    -moz-transform: rotateY(180deg) rotateX(0deg);
+    -ms-transform: rotateY(180deg) rotateX(0deg);
     transform: rotateY(180deg) rotateX(0deg);
   }
 
@@ -250,7 +279,6 @@ $partSize: 120px;
     width: $partSize * $cols + $margins * ($cols - 1) * 2;
     height: $partSize * $rows + $margins * ($rows - 1) * 2;
 
-    background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -277,11 +305,17 @@ $partSize: 120px;
 @for $row from 1 through $rows {
   @for $col from 1 through $cols {
     .demo__part-#{$row}-#{$col} .demo__part-back-inner {
+      -webkit-transform: translate( -($col - 1) * ($partSize + $margins * 2), -($row - 1) * ($partSize + $margins * 2) );
+      -moz-transform: translate( -($col - 1) * ($partSize + $margins * 2), -($row - 1) * ($partSize + $margins * 2) );
+      -ms-transform: translate( -($col - 1) * ($partSize + $margins * 2), -($row - 1) * ($partSize + $margins * 2) );
       transform: translate( -($col - 1) * ($partSize + $margins * 2), -($row - 1) * ($partSize + $margins * 2) );
     }
   }
 }
 
 .show-front {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
   transform: none;
 }

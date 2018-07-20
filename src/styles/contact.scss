@@ -25,15 +25,19 @@
 .contact-container {
   padding: 2rem 0rem;
   padding-bottom: 4rem;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   @media(min-width: 576px) {
     background: url('../images/backgrounds/background11.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   @media(max-width: 576px) {
     background: url('../images/backgrounds/background11.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 

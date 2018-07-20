@@ -151,6 +151,7 @@ $(document).ready(function() {
   var $help = $(".demo__help");
   var partsArray = [];
   var reqAnimFr = (function() {
+    console.log('window.reqA', window.requestAnimationFrame);
     return window.requestAnimationFrame || function(cb) {
       setTimeout(cb, 1000 / 60);
     }
