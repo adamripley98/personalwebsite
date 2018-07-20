@@ -1,11 +1,16 @@
 .home-container {
   margin-top: -4rem;
   padding-bottom: 4rem;
-  background: url('../images/backgrounds/abstract6.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @media(min-width: 576px) {
+    background: url('../images/backgrounds/abstract6.jpg') no-repeat center center fixed;
+  }
+  @media(max-width: 576px) {
+    background: url('../images/backgrounds/abstract6.jpg');
+  }
 }
 
 .home-card {
@@ -39,8 +44,8 @@
     width: 3.0rem;
   }
   @media (max-width: 600px) {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
   }
 }
 
@@ -72,7 +77,12 @@
 
 .headshot {
   border-radius: 50%;
-  width: 22rem;
+  @media(min-width: 576px) {
+    width: 22rem;
+  }
+  @media(max-width: 576px) {
+    width: 16rem;
+  }
   margin-top: 10vh;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }

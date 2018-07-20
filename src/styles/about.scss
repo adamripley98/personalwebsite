@@ -1,11 +1,16 @@
 .about-container {
   padding: 2rem 0rem;
   padding-bottom: 4rem;
-  background: url('../images/backgrounds/abstract4.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @media(min-width: 576px) {
+    background: url('../images/backgrounds/abstract4.jpg') no-repeat center center fixed;
+  }
+  @media(max-width: 576px) {
+    background: url('../images/backgrounds/abstract4.jpg');
+  }
 }
 
 .about-card {
