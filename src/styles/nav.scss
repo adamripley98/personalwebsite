@@ -25,12 +25,12 @@ nav {
     transition: 0.5s;
     cursor: hand;
     cursor: pointer;
-    @media(min-height: 440px) {
+    @media(min-width: 440px) {
       height: 5rem;
       width: auto;
     }
-    @media(max-height: 440px) {
-      height:1rem;
+    @media(max-width: 440px) {
+      height:3rem;
       width: auto;
     }
   }
