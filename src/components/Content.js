@@ -151,7 +151,6 @@ $(document).ready(function() {
   var $help = $(".demo__help");
   var partsArray = [];
   var reqAnimFr = (function() {
-    console.log('window.reqA', window.requestAnimationFrame);
     return window.requestAnimationFrame || function(cb) {
       setTimeout(cb, 1000 / 60);
     }
@@ -164,7 +163,6 @@ $(document).ready(function() {
       partsArray[row - 1][col - 1] = new Part();
     }
   }
-
   var $parts = $(".demo__part");
   var $image = $(".demo__part-back-inner");
   var help = true;
@@ -174,18 +172,17 @@ $(document).ready(function() {
   }
 
   $gallery.on("click", ".demo__part-front", function() {
-
     $image.css("background-image", $(this).css("background-image"));
     if (help) {
       help = false;
     }
-
     let row = +$(this).closest(".demo__part").attr("row");
     let col = +$(this).closest(".demo__part").attr("col");
     waveChange(row, col);
   });
 
   $gallery.on("click", ".demo__part-back", function() {
+
     if (!isShowingBack()) return;
 
     setTimeout(function() {
@@ -211,7 +208,7 @@ $(document).ready(function() {
   }
 
   function isShowingBack() {
-    return partsArray[0][0].showing == "back" && partsArray[0][cols - 1].showing == "back" && partsArray[rows - 1][0].showing == "back" && partsArray[rows - 1][cols - 1].showing == "back";
+    return partsArray[0][0].showing ==="back" && partsArray[0][cols - 1].showing ==="back" && partsArray[rows - 1][0].showing ==="back" && partsArray[rows - 1][cols - 1].showing ==="back";
   }
 
   function Part() {
@@ -220,7 +217,7 @@ $(document).ready(function() {
 
   function waveChange(rowN, colN) {
     if (rowN > rows || colN > cols || rowN <= 0 || colN <= 0) return;
-    if (partsArray[rowN - 1][colN - 1].showing == "back") return;
+    if (partsArray[rowN - 1][colN - 1].showing ==="back") return;
     $(".demo__part-" + rowN + "-" + colN).removeClass("show-front");
     partsArray[rowN - 1][colN - 1].showing = "back";
     setTimeout(function() {
