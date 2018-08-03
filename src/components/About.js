@@ -104,11 +104,8 @@ class About extends Component {
                 </div>
                 <div className="line-break" />
                 <p className="card-text">
-                  &#9658;&nbsp;&nbsp;I&apos;m spending some time in Lake Tahoe enjoying
-                  some nature and catching up on coding for&nbsp;
-                  <a href="https://www.riplo.io" target="_blank" rel="noopener noreferrer">
-                    Riplo.
-                  </a>
+                  &#9658;&nbsp;&nbsp;I&apos;m spending some time in San Jose, visitng
+                  my friend Cam and working on some personal projects.&nbsp;
                   <br />
                   <br />
                   &#9658;&nbsp;&nbsp;I&apos;m reading a book called&nbsp;
@@ -119,11 +116,8 @@ class About extends Component {
                   algorithms.
                   <br />
                   <br />
-                  &#9658;&nbsp;&nbsp;In a couple days I&apos;m heading to San Jose
-                  to visit my friend&nbsp;
-                  <a href="https://www.cameroncabo.com" target="_blank" rel="noopener noreferrer">
-                    Cam.
-                  </a>
+                  &#9658;&nbsp;&nbsp;In a week I&apos;m roadtripping from SF to Seattle
+                  with my friend Tian.&nbsp;
                 </p>
               </div>
             </Fade>
